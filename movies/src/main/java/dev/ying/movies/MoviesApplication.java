@@ -2,8 +2,9 @@ package dev.ying.movies;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {SecurityAutoConfiguration.class })
 // @EnableAutoConfiguration(exclude = { MongoAutoConfiguration.class }) // ignore mongodb auto configuration
 // @RestController
 public class MoviesApplication {
