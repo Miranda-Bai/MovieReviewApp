@@ -11,8 +11,8 @@ public class MoviesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
-	// an example about how to match request path
-	// @GetMapping("/")
+
+	// @GetMapping("/") // an example about how to match request path
 	// public String apiRoot() {
 	// return "Hello world!";
 	// }
